@@ -1,0 +1,37 @@
+{
+  "version": "0.0.1",
+  "keywords": [
+    "textlintrule",
+    "textlint"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "devDependencies": {
+    "@textlint/types": "^14.4.0",
+    "textlint-scripts": "^14.4.0",
+    "textlint-tester": "^14.4.0"
+  },
+  "name": "textlint-rule-non-descriptive-link-text",
+  "description": "This rule checks for non-descriptive link texts that do not provide sufficient context about the linked content. Using generic text like \"click here\" or \"read more\" can harm accessibility and SEO. Replace such link texts with more descriptive ones to enhance user experience and improve content discoverability.",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/101ta28/textlint-rule-non-descriptive-link-text.git"
+  },
+  "author": "Imai Tatsuya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/101ta28/textlint-rule-non-descriptive-link-text/issues"
+  },
+  "homepage": "https://github.com/101ta28/textlint-rule-non-descriptive-link-text#readme"
+}
